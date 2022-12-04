@@ -1,6 +1,6 @@
 import java.nio.charset.StandardCharsets
 
-class Day1 {
+private class Day1 {
     fun solve(input: String, count: Int = 1): List<Elf> {
         val elves = input.split("\n\n")
             .mapIndexed { index, calories ->
@@ -36,7 +36,7 @@ const val Input2 = """
     
 """
 
-data class Elf(val carrying: List<Int>, val index: Int) {
+private data class Elf(val carrying: List<Int>, val index: Int) {
     fun totalCalories() = carrying.sum()
 }
 
